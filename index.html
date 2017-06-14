@@ -37,7 +37,7 @@
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a href="#top" class="navbar-brand">智慧生活應用 DailyLife</a>
+                <a href="#top" class="navbar-brand">智慧生活應用DAYLYLIFE</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -47,10 +47,10 @@
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
                     <li><a href="#intention">題目發想</a></li>
-                    <li><a href="#ourvalue">服務的價值</a></li>
-                    <li><a href="#servicemodel">服務模式</a></li>
+                    <li><a href="#ourvalue">摘要</a></li>
+                    <li><a href="#servicemodel">技術介紹</a></li>
                     <li><a href="#function">主要功能</a></li>
-                    <li><a href="#product">產品發想圖</a></li>
+                    <li><a href="#product">產品預覽圖</a></li>
                     <li><a href="#api">API</a></li>
                 </ul>
 
@@ -61,44 +61,50 @@
         </div>
     </div>
     <div class="row splash" id="top">
-        <h1>智慧生活應用 DailyLife</h1>
+        <h1>智慧生活應用DAYLYLIFE</h1>
     </div>
     <div class='container'>
         <div class="row" id="intention">
             <div class="col-lg-8 col-md-7 col-sm-6">
                 <h1>題目發想</h1>
                 <p class="lead">
-                    某些時候我們常常需要一個安靜的地方讀書、做專案，然而時常因為一些臨時的施工或造勢活動之類的，破壞圖書館或咖啡廳的寧靜，因此我們想利用政府的即時施工及營建位置資料，找出潛在性吵雜的地方，給需要安靜工作的人一個安靜的空間
+                    身為Youbike的長期使用者，有時候會遇到有車騎過去目的地卻在要回程的時候無車可借的窘境。 因此決定要打造一個方便且容易使用的介面，並結合已經有的google 地圖ＡＰＩ，提供有需要的使用者方便查詢24小時之內台北市各站點每5分鐘的可用車子數量
                 </p>
             </div>
         </div>
         <div class="row" id="ourvalue">
             <div class="col-lg-8 col-md-7 col-sm-6">
-                <h1>服務的價值</h1>
+                <h1>摘要</h1>
                 <p class="lead">
-                    當使用者使用我們的服務時，我們會將從使用者端得到的資訊，根據使用者的喜好去推薦使用者喜歡的環境 如：圖書館.咖啡廳.公園...等空間，並且會隨時跟著資料的變動，以主動的角度去告知使用者跟使用者做同步，希望能時時切切推薦合適的地點
+                    我們的產品會提供即時Youbike個站點之資訊，除此之外，更能夠預測各個站點未來一天之內的腳踏車數量，最後更搭配建立網站將資料視覺化，讓使用者可以一眼就看出資料量的變化，且無須安裝任何app或應用程式，只要一個連結就可以快速的查詢各站點未來24小時內的預測可借車子的數量。
                 </p>
             </div>
         </div>
         <div class="row" id="servicemodel">
             <div class="col-lg-8 col-md-7 col-sm-6">
-                <h1>服務模式</h1>
+                <h1>技術介紹</h1>
                 <p class="lead">
-                    <img src="./a.jpg" alt="Something goes wrong..." width="100%">
+                    本次使用的資料是由台北市政府提供的Youbike即時狀態資料，使用NodeJS本每分鐘抓取之後存進MySQL資料庫中。目前已經累積超過百萬筆的紀錄，資料數量極為龐大，對於後續訓練多層神經網路模型有著極大的幫助 我們相信天氣對於預測有著很大的影響，因此資料除了有各站點的狀態外，我也使用商用天氣API一起把當時各站點所在的區域的天氣同時記錄下來
                 </p>
             </div>
         </div>
         <div class="row" id="function">
             <div class="col-lg-8 col-md-7 col-sm-6">
                 <h1>主要功能</h1>
-                <p class="lead">
-                    <img src="b.jpg" alt="Something goes wrong..." width="100%">
-                </p>
+                <ol style="font-size: 20px;">
+                    <li>
+                        簡易的視覺操作介面
+                    </li>
+                    <li>
+                        實際預測 24小時內的 Ubike站點資訊
+                    </li>
+                    <li>天氣資料整合</li>
+                </ol>
             </div>
         </div>
         <div class="row" id="product">
             <div class="col-lg-8 col-md-7 col-sm-6">
-                <h1>產品發想圖</h1>
+                <h1>產品預覽圖</h1>
                 <p class="lead">
                     <img src="./c.jpg" alt="Something goes wrong..." width="100%">
                 </p>
@@ -109,11 +115,16 @@
                 <h1>API</h1>
                 <p class="lead">
                     <ol style="font-size: 20px;">
-                        <li>臺北市即時交通訊息</li>
-                        <li>臺北市環境及交通噪音監測站地點</li>
-                        <li>臺北市噪音稽查處分年報表</li>
-                        <li>臺北市今日施工資訊</li>
-                        <li>臺北市營建工程噪音告發案件點及資訊</li>
+                        <li>
+                            <a href="http://data.taipei/opendata/datalist/datasetMeta/outboundDesc?id=8ef1626a-892a-4218-8344-f7ac46e1aa48&rid=ddb80380-f1b3-4f8e-8016-7ed9cba571d5">
+                                YouBike臺北市公共自行車即時資訊API存取
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.wunderground.com/weather/api/">
+                                WeatherUnderground Api
+                            </a>
+                        </li>
                     </ol>
                 </p>
             </div>
@@ -132,15 +143,15 @@
                         <tbody>
                             <tr>
                                 <td>劉昌衡</td>
-                                <td>負責前端設計</td>
+                                <td>負責網頁前端設計</td>
                             </tr>
                             <tr>
                                 <td>黃德育</td>
-                                <td>負責後端資料處理</td>
+                                <td>負責後端資料蒐集/建模</td>
                             </tr>
                             <tr>
                                 <td>茅向安</td>
-                                <td>負責App開發</td>
+                                <td>負責資料庫設計</td>
                             </tr>
                         </tbody>
                     </table>
